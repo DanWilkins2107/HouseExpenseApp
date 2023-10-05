@@ -8,18 +8,21 @@
 import SwiftUI
 
 struct HeaderView: View {
+    var isLoggedIn: Bool
     var body: some View {
         HStack {
             Circle()
                 .frame(width: 70, height: 70)
-            Spacer()
-            Image(systemName: "rectangle.portrait.and.arrow.right")
-                .font(.title)
+            if isLoggedIn {
+                Spacer()
+                Image(systemName: "rectangle.portrait.and.arrow.right")
+                    .font(.title)
+            }
         }
         .padding()
     }
 }
 
 #Preview {
-    HeaderView()
+    HeaderView(isLoggedIn: false)
 }
