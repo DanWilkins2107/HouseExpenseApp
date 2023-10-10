@@ -14,7 +14,7 @@ struct Household: Hashable, Identifiable {
     let adminID: String
     let userIDs: [String]
     let joiningCode: String
-    let itemsAndTotals: [String: [String: Double]]
+    let itemsAndTotals: [Item]
     let expenseHistory: [Expense]
 }
 
@@ -29,7 +29,6 @@ struct Expense: Hashable, Identifiable {
 }
 
 struct Item: Hashable {
-    let id: String
     let name: String
     let totals: [String: Double]
 }

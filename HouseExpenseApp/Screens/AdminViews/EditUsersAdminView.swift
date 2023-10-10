@@ -8,14 +8,36 @@
 import SwiftUI
 
 struct EditUsersAdminView: View {
+    var household: Household
     var body: some View {
         ZStack {
             BackgroundView()
-            Text("Edit Users")
+            VStack {
+                Text("Edit Users")
+                    .font(.title)
+                    .fontWeight(.bold)
+                ForEach(household.userIDs, id: \.self) { user in
+                    HStack {
+                        Text(user)
+                            .padding()
+                        Spacer()
+                        Image(systemName: "eye")
+                            .padding()
+                        Image(systemName: "trash")
+                            .padding()
+                        
+                    }
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 50)
+                    .background(.white.gradient)
+                    .padding()
+                }
+                Spacer()
+            }
         }
     }
 }
 
 #Preview {
-    EditUsersAdminView()
+    EditUsersAdminView(household: MockData.house1)
 }

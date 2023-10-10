@@ -92,10 +92,10 @@ struct AdminView: View {
             }
         }
         .sheet(isPresented: $itemsIsExpanded) {
-            EditItemsAdminView()
+            EditItemsAdminView(household: household)
         }
         .sheet(isPresented: $usersIsExpanded) {
-            EditUsersAdminView()
+            EditUsersAdminView(household: household)
         }
         .sheet(isPresented: $expenseHistoryIsExpanded) {
             ViewExpensesAdminView(household: household)
