@@ -16,7 +16,7 @@ struct HouseView: View {
         return ZStack {
             Rectangle()
                 .frame(width: .infinity, height: 100)
-                .foregroundColor(.white.opacity(0.8))
+                .foregroundColor(.white)
                 .cornerRadius(5)
             HStack {
                 VStack {
@@ -46,32 +46,20 @@ struct DashboardView: View {
                 HeaderView(isLoggedIn: true)
                 Text("Hi Dan")
                     .font(.largeTitle)
-                    .foregroundColor(.white)
+                    .foregroundColor(.black)
                     .bold()
                     .padding()
                 Button {
                     
                 } label: {
-                    Text("Create Household")
-                        .foregroundColor(.white)
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(.blue.gradient)
-                        .cornerRadius(10)
+                    GenericButtonLabel(foregroundColor: .white, backgroundColor: .blue, text: "Create Household")
                 }
-                .padding(.horizontal)
                 
                 Button {
                     
                 } label: {
-                    Text("Join Household")
-                        .foregroundColor(.blue)
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(.white.gradient)
-                        .cornerRadius(10)
+                    GenericButtonLabel(foregroundColor: .blue, backgroundColor: .white, text: "Join Household")
                 }
-                .padding()
                 ZStack {
                     Color.white.opacity(0.4)
                     ScrollView {

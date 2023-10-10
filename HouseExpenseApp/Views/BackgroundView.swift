@@ -9,9 +9,11 @@ import SwiftUI
 
 struct BackgroundView: View {
     var body: some View {
-        ContainerRelativeShape()
-            .fill(Color.yellow.gradient)
-            .ignoresSafeArea()
+        ZStack {
+            ContainerRelativeShape()
+                .fill(Color.yellow.gradient)
+                .ignoresSafeArea()
+        }
     }
 }
 
