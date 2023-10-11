@@ -1,2 +1,2 @@
-# Ignore files starting with "hidden"
-/hidden*
+# Ignore files/ folders starting with "hidden"
+/**/hidden*
