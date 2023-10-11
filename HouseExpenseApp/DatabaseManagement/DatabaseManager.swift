@@ -9,5 +9,5 @@ import Foundation
 import Supabase
 
 class DatabaseManager: ObservableObject {
-    let client = SupabaseClient(supabaseURL: <#T##URL#>, supabaseKey: <#T##String#>)
+    
 }
