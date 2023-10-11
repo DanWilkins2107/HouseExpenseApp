@@ -19,6 +19,7 @@
 		6D3388DB2AD6FC06000EB444 /* AddExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3388DA2AD6FC06000EB444 /* AddExpenseView.swift */; };
 		6D3388DD2AD6FCEB000EB444 /* ExpenseTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3388DC2AD6FCEB000EB444 /* ExpenseTable.swift */; };
 		6D3388E02AD70037000EB444 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 6D3388DF2AD70037000EB444 /* Supabase */; };
+		6D3388E52AD702B6000EB444 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3388E42AD702B6000EB444 /* DatabaseManager.swift */; };
 		6D46152A2ACEB37500B53AB3 /* Admin View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4615292ACEB37500B53AB3 /* Admin View.swift */; };
 		6D46152C2ACEB38800B53AB3 /* Login View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46152B2ACEB38800B53AB3 /* Login View.swift */; };
 		6D4615332ACF03D300B53AB3 /* SignUpview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4615322ACF03D200B53AB3 /* SignUpview.swift */; };
@@ -64,6 +65,7 @@
 		6D3388D62AD6F761000EB444 /* UserHouseholdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHouseholdView.swift; sourceTree = "<group>"; };
 		6D3388DA2AD6FC06000EB444 /* AddExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseView.swift; sourceTree = "<group>"; };
 		6D3388DC2AD6FCEB000EB444 /* ExpenseTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTable.swift; sourceTree = "<group>"; };
+		6D3388E42AD702B6000EB444 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		6D4615292ACEB37500B53AB3 /* Admin View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Admin View.swift"; sourceTree = "<group>"; };
 		6D46152B2ACEB38800B53AB3 /* Login View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login View.swift"; sourceTree = "<group>"; };
 		6D4615322ACF03D200B53AB3 /* SignUpview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpview.swift; sourceTree = "<group>"; };
@@ -158,6 +160,14 @@
 			path = ExpenseViews;
 			sourceTree = "<group>";
 		};
+		6D3388E22AD70294000EB444 /* DatabaseManagement */ = {
+			isa = PBXGroup;
+			children = (
+				6D3388E42AD702B6000EB444 /* DatabaseManager.swift */,
+			);
+			path = DatabaseManagement;
+			sourceTree = "<group>";
+		};
 		6D4615282ACEB34800B53AB3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +202,7 @@
 		6DF470FA2ACDC131003BFE77 /* HouseExpenseApp */ = {
 			isa = PBXGroup;
 			children = (
+				6D3388E22AD70294000EB444 /* DatabaseManagement */,
 				6D4615282ACEB34800B53AB3 /* Views */,
 				6DF4712C2ACDD89D003BFE77 /* Screens */,
 				6DF4712B2ACDD88E003BFE77 /* Mock Data */,
@@ -403,6 +414,7 @@
 				6D4615372AD0158800B53AB3 /* FormViews.swift in Sources */,
 				6D3388DB2AD6FC06000EB444 /* AddExpenseView.swift in Sources */,
 				6D3388BC2AD2EC93000EB444 /* EditItemsAdminView.swift in Sources */,
+				6D3388E52AD702B6000EB444 /* DatabaseManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
