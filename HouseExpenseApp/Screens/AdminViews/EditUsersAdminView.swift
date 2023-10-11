@@ -25,14 +25,13 @@ struct EditUsersAdminView: View {
                             .padding()
                         Image(systemName: "trash")
                             .padding()
-                        
                     }
                     .frame(maxWidth: .infinity)
-                    .frame(height: 50)
+                    .frame(height: 5)
                     .background(.white.gradient)
                     .padding()
                 }
-                Spacer()
+            Spacer()
             }
         }
     }

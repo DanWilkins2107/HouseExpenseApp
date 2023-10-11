@@ -8,11 +8,11 @@
 import Foundation
 
 struct MockData {
-    static let house1 = Household(id: "id1", householdName: "Colin House", noOfMembers: 2, adminID: "id1", userIDs: ["id1", "id2"], joiningCode: "12345", itemsAndTotals: Items, expenseHistory: expenseHistory)
-    static let house2 = Household(id: "id2", householdName: "Household 2", noOfMembers: 2, adminID: "id1", userIDs: ["id1", "id2"], joiningCode: "12345", itemsAndTotals: Items, expenseHistory: expenseHistory)
-    static let house3 = Household(id: "id3", householdName: "Household 3", noOfMembers: 4, adminID: "id1", userIDs: ["id1", "id2"], joiningCode: "12345", itemsAndTotals: Items, expenseHistory: expenseHistory)
-    static let house4 = Household(id: "id4", householdName: "Household 4", noOfMembers: 5, adminID: "id1", userIDs: ["id1", "id2"], joiningCode: "12345", itemsAndTotals: Items, expenseHistory: expenseHistory)
-    static let house5 = Household(id: "id5", householdName: "Household 5", noOfMembers: 3, adminID: "id1", userIDs: ["id1", "id2"], joiningCode: "12345", itemsAndTotals: Items, expenseHistory: expenseHistory)
+    static let house1 = Household(id: "id1", householdName: "Colin House", noOfMembers: 2, adminID: "id1", userIDs: ["id1", "id2"], joiningCode: "12345", itemsAndTotals: Items, expenseHistory: expenseHistory, shoppingList: shoppingList)
+    static let house2 = Household(id: "id2", householdName: "Household 2", noOfMembers: 2, adminID: "id1", userIDs: ["id1", "id2"], joiningCode: "12345", itemsAndTotals: Items, expenseHistory: expenseHistory, shoppingList: shoppingList)
+    static let house3 = Household(id: "id3", householdName: "Household 3", noOfMembers: 4, adminID: "id1", userIDs: ["id1", "id2"], joiningCode: "12345", itemsAndTotals: Items, expenseHistory: expenseHistory, shoppingList: shoppingList)
+    static let house4 = Household(id: "id4", householdName: "Household 4", noOfMembers: 5, adminID: "id1", userIDs: ["id1", "id2"], joiningCode: "12345", itemsAndTotals: Items, expenseHistory: expenseHistory, shoppingList: shoppingList)
+    static let house5 = Household(id: "id5", householdName: "Household 5", noOfMembers: 3, adminID: "id1", userIDs: ["id1", "id2"], joiningCode: "12345", itemsAndTotals: Items, expenseHistory: expenseHistory, shoppingList: shoppingList)
     static let householdArray = [house1, house2, house3, house4, house5]
     
     static let Items: [Item] = [
@@ -29,6 +29,15 @@ struct MockData {
         Expense(id: "id1", userID: "user1", category: "Kitchen", price: 2.18, description: "Cheese", date: Date.now),
         Expense(id: "id2", userID: "user2", category: "Kitchen", price: 3.20, description: "Choc", date: Date.now)
     ]
+    
+    static let shoppingList: [ShoppingListItem] = [
+        ShoppingListItem(name: "Cheese", totalNeeded: "3", description: "Cheddar"),
+        ShoppingListItem(name: "Choc", totalNeeded: "1", description: "Milk"),
+        ShoppingListItem(name: "Cheese", totalNeeded: "3", description: "Cheddar"),
+        ShoppingListItem(name: "Choc", totalNeeded: "1", description: "Milk")
+    ]
+
+
 }
 
 

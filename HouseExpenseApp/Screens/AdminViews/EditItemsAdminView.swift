@@ -18,7 +18,6 @@ struct EditItemsAdminView: View {
                     .font(.title)
                     .fontWeight(.bold)
                 ScrollView(.vertical) {
-                    ScrollView(.horizontal) {
                         ForEach(household.itemsAndTotals, id: \.self) { item in
                             VStack {
                                 HStack {
@@ -43,7 +42,6 @@ struct EditItemsAdminView: View {
                                     }
                                 }
                             }
-                        }
                     }
                 }
             }
@@ -69,6 +67,7 @@ struct CardView: View {
                     }
                     .padding(.horizontal)
                 }
+                Text("Also show latest transactions here")
             }
             .padding()
         }

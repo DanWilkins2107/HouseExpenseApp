@@ -16,6 +16,7 @@ struct Household: Hashable, Identifiable {
     let joiningCode: String
     let itemsAndTotals: [Item]
     let expenseHistory: [Expense]
+    let shoppingList: [ShoppingListItem]
 }
 
 struct Expense: Hashable, Identifiable {
@@ -31,4 +32,10 @@ struct Expense: Hashable, Identifiable {
 struct Item: Hashable {
     let name: String
     let totals: [String: Double]
+}
+
+struct ShoppingListItem: Hashable {
+    let name: String
+    let totalNeeded: String
+    let description: String
 }
