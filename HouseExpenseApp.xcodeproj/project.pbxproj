@@ -23,8 +23,12 @@
 		6D3388EC2AD707BD000EB444 /* SupabaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3388EB2AD707BD000EB444 /* SupabaseClient.swift */; };
 		6D46152A2ACEB37500B53AB3 /* Admin View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4615292ACEB37500B53AB3 /* Admin View.swift */; };
 		6D46152C2ACEB38800B53AB3 /* Login View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46152B2ACEB38800B53AB3 /* Login View.swift */; };
-		6D4615332ACF03D300B53AB3 /* SignUpview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4615322ACF03D200B53AB3 /* SignUpview.swift */; };
+		6D4615332ACF03D300B53AB3 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4615322ACF03D200B53AB3 /* SignUpView.swift */; };
 		6D4615372AD0158800B53AB3 /* FormViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4615362AD0158800B53AB3 /* FormViews.swift */; };
+		6DB144932AD82EE000E62EE5 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB144922AD82EE000E62EE5 /* SignUpViewModel.swift */; };
+		6DB144952AD82EF000E62EE5 /* SignUpName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB144942AD82EF000E62EE5 /* SignUpName.swift */; };
+		6DB144972AD946DF00E62EE5 /* SignUpEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB144962AD946DF00E62EE5 /* SignUpEmail.swift */; };
+		6DE455D12ADB353C00C0C510 /* SignUpPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE455D02ADB353C00C0C510 /* SignUpPassword.swift */; };
 		6DF470FC2ACDC131003BFE77 /* HouseExpenseAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF470FB2ACDC131003BFE77 /* HouseExpenseAppApp.swift */; };
 		6DF470FE2ACDC131003BFE77 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF470FD2ACDC131003BFE77 /* DashboardView.swift */; };
 		6DF471002ACDC133003BFE77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DF470FF2ACDC133003BFE77 /* Assets.xcassets */; };
@@ -70,8 +74,12 @@
 		6D3388EB2AD707BD000EB444 /* SupabaseClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseClient.swift; sourceTree = "<group>"; };
 		6D4615292ACEB37500B53AB3 /* Admin View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Admin View.swift"; sourceTree = "<group>"; };
 		6D46152B2ACEB38800B53AB3 /* Login View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login View.swift"; sourceTree = "<group>"; };
-		6D4615322ACF03D200B53AB3 /* SignUpview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpview.swift; sourceTree = "<group>"; };
+		6D4615322ACF03D200B53AB3 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		6D4615362AD0158800B53AB3 /* FormViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViews.swift; sourceTree = "<group>"; };
+		6DB144922AD82EE000E62EE5 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		6DB144942AD82EF000E62EE5 /* SignUpName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpName.swift; sourceTree = "<group>"; };
+		6DB144962AD946DF00E62EE5 /* SignUpEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEmail.swift; sourceTree = "<group>"; };
+		6DE455D02ADB353C00C0C510 /* SignUpPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPassword.swift; sourceTree = "<group>"; };
 		6DF470F82ACDC131003BFE77 /* HouseExpenseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HouseExpenseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DF470FB2ACDC131003BFE77 /* HouseExpenseAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseExpenseAppApp.swift; sourceTree = "<group>"; };
 		6DF470FD2ACDC131003BFE77 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
@@ -117,7 +125,10 @@
 			isa = PBXGroup;
 			children = (
 				6D46152B2ACEB38800B53AB3 /* Login View.swift */,
-				6D4615322ACF03D200B53AB3 /* SignUpview.swift */,
+				6D4615322ACF03D200B53AB3 /* SignUpView.swift */,
+				6DB144942AD82EF000E62EE5 /* SignUpName.swift */,
+				6DB144962AD946DF00E62EE5 /* SignUpEmail.swift */,
+				6DE455D02ADB353C00C0C510 /* SignUpPassword.swift */,
 			);
 			path = SignInViews;
 			sourceTree = "<group>";
@@ -146,9 +157,9 @@
 			isa = PBXGroup;
 			children = (
 				6D3388D92AD6FBE4000EB444 /* ExpenseViews */,
+				6D3388D02AD6F1F4000EB444 /* ShoppingListViews */,
 				6D3388C92AD5FD97000EB444 /* CategoryHistoryView.swift */,
 				6D3388D62AD6F761000EB444 /* UserHouseholdView.swift */,
-				6D3388D02AD6F1F4000EB444 /* ShoppingListViews */,
 			);
 			path = UserViews;
 			sourceTree = "<group>";
@@ -190,6 +201,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		6DB144912AD82ECE00E62EE5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6DB144922AD82EE000E62EE5 /* SignUpViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		6DF470EF2ACDC131003BFE77 = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +232,7 @@
 		6DF470FA2ACDC131003BFE77 /* HouseExpenseApp */ = {
 			isa = PBXGroup;
 			children = (
+				6DB144912AD82ECE00E62EE5 /* ViewModels */,
 				6D3388E22AD70294000EB444 /* DatabaseManagement */,
 				6D4615282ACEB34800B53AB3 /* Views */,
 				6DF4712C2ACDD89D003BFE77 /* Screens */,
@@ -414,11 +434,15 @@
 				6DF471282ACDC5DC003BFE77 /* HeaderView.swift in Sources */,
 				6D3388CA2AD5FD97000EB444 /* CategoryHistoryView.swift in Sources */,
 				6D46152A2ACEB37500B53AB3 /* Admin View.swift in Sources */,
-				6D4615332ACF03D300B53AB3 /* SignUpview.swift in Sources */,
+				6D4615332ACF03D300B53AB3 /* SignUpView.swift in Sources */,
 				6D3388B82AD1CA7D000EB444 /* EditUsersAdminView.swift in Sources */,
 				6D3388C22AD43495000EB444 /* Data Types.swift in Sources */,
 				6DF471262ACDC3B4003BFE77 /* BackgroundView.swift in Sources */,
+				6DB144952AD82EF000E62EE5 /* SignUpName.swift in Sources */,
+				6DB144932AD82EE000E62EE5 /* SignUpViewModel.swift in Sources */,
 				6D3388DD2AD6FCEB000EB444 /* ExpenseTable.swift in Sources */,
+				6DE455D12ADB353C00C0C510 /* SignUpPassword.swift in Sources */,
+				6DB144972AD946DF00E62EE5 /* SignUpEmail.swift in Sources */,
 				6D46152C2ACEB38800B53AB3 /* Login View.swift in Sources */,
 				6D3388D42AD6F4EA000EB444 /* AddShoppingItemView.swift in Sources */,
 				6DF4712A2ACDC94F003BFE77 /* MockData.swift in Sources */,

@@ -22,10 +22,10 @@ struct Login_View: View {
                     VStack(alignment: .center) {
                         Spacer()
                         LoginHeader(text: "Email")
-                        RegularTextField(text: "Enter Email", variableToModify: $email, isEmail: true)
+//                        RegularTextField(text: "Enter Email", variableToModify: $email, isEmail: true)
                         Spacer()
                         LoginHeader(text: "Password")
-                        PasswordField(text: "Enter Password", variableToModify: $password, isHidden: true)
+//                        PasswordField(text: "Enter Password", variableToModify: $password, isHidden: true)
                         Spacer()
                         Button {
                             

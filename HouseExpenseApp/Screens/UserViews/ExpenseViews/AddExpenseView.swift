@@ -17,13 +17,13 @@ struct AddExpenseView: View {
             BackgroundView()
             VStack {
                 Text("New Expense")
-                RegularTextField(text: "Enter Item", variableToModify: $itemName, isEmail: false)
+//                RegularTextField(text: "Enter Item", variableToModify: $itemName, isEmail: false)
                 Spacer()
-                RegularTextField(text: "Enter Category", variableToModify: $itemCategory, isEmail: false)
+//                RegularTextField(text: "Enter Category", variableToModify: $itemCategory, isEmail: false)
                 Spacer()
-                RegularTextField(text: "Enter Price", variableToModify: $itemPrice, isEmail: false)
+//                RegularTextField(text: "Enter Price", variableToModify: $itemPrice, isEmail: false)
                 Spacer()
-                RegularTextField(text: "Enter Description", variableToModify: $itemPrice, isEmail: false)
+//                RegularTextField(text: "Enter Description", variableToModify: $itemPrice, isEmail: false)
                 Spacer()
                 Button {
                     

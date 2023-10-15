@@ -30,10 +30,42 @@
             filePath = "HouseExpenseApp/DatabaseManagement/AuthManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
             landmarkName = "handleSignUp(email:password:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "74B966CB-33E9-4C99-9FC8-56107EE580FD - febc1ced9d263ff7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HouseExpenseApp.AuthManager.handleSignUp(email: Swift.String, password: Swift.String) async -&gt; ()"
+                  moduleName = "HouseExpenseApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielwilkins/HouseExpenseApp/HouseExpenseApp/DatabaseManagement/AuthManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "270">
+               </Location>
+               <Location
+                  uuid = "74B966CB-33E9-4C99-9FC8-56107EE580FD - 8071b3a7b3d11907"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for HouseExpenseApp.AuthManager.handleSignUp(email: Swift.String, password: Swift.String) async -&gt; ()"
+                  moduleName = "HouseExpenseApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielwilkins/HouseExpenseApp/HouseExpenseApp/DatabaseManagement/AuthManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "86">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

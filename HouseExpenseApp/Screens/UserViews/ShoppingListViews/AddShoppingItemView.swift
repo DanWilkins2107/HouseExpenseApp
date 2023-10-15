@@ -17,11 +17,11 @@ struct AddShoppingItemView: View {
             BackgroundView()
             VStack {
                 Text("Add Shopping List Item")
-                RegularTextField(text: "Enter Item", variableToModify: $itemName, isEmail: false)
+//                RegularTextField(text: "Enter Item", variableToModify: $itemName, isEmail: false)
                 Spacer()
-                RegularTextField(text: "Enter Quantity", variableToModify: $itemQuantity, isEmail: false)
+//                RegularTextField(text: "Enter Quantity", variableToModify: $itemQuantity, isEmail: false)
                 Spacer()
-                RegularTextField(text: "Enter Description", variableToModify: $itemDescription, isEmail: false)
+//                RegularTextField(text: "Enter Description", variableToModify: $itemDescription, isEmail: false)
                 Spacer()
                 Button {
                     

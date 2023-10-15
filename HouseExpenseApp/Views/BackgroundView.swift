@@ -11,7 +11,7 @@ struct BackgroundView: View {
     var body: some View {
         ZStack {
             ContainerRelativeShape()
-                .fill(Color.yellow.gradient)
+                .fill(Color.white)
                 .ignoresSafeArea()
         }
     }
